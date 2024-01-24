@@ -1,0 +1,72 @@
+config:
+  credentials: []
+  project_repos:
+    github.com/EOSC-synergy/sqaaas-tooling:
+      branch: release/2.0.0
+      repo: https://github.com/EOSC-synergy/sqaaas-tooling
+    github.com/interTwin-eu/dcnios:
+      branch: main
+      repo: https://github.com/interTwin-eu/dcnios
+environment:
+  JPL_DOCKERFORCEBUILD: enabled
+  JPL_KEEPGOING: enabled
+sqa_criteria:
+  QC.Acc:
+    repos:
+      github.com/interTwin-eu/dcnios git:
+        commands:
+        - /usr/bin/env sh .sqa/script.flabby-chartreuse-earwig.sh
+        container: qc.acc_tacky-olivine-horse
+  QC.Doc:
+    repos:
+      github.com/interTwin-eu/dcnios find_doc_files.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.scaly-aqua-panda.sh
+        container: qc.doc_droopy-jade-lion
+      github.com/interTwin-eu/dcnios git:
+        commands:
+        - /usr/bin/env sh .sqa/script.stuffy-ecru-chamois.sh
+        container: qc.doc_sunny-cornflower-toucan
+      github.com/interTwin-eu/dcnios markdownlint:
+        commands:
+        - /usr/bin/env sh .sqa/script.breezy-gamboge-macaque.sh
+        container: qc.doc_snoopy-thistle-markhor
+  QC.Lic:
+    repos:
+      github.com/interTwin-eu/dcnios licensee:
+        commands:
+        - /usr/bin/env sh .sqa/script.squeaky-amaranth-squid.sh
+        container: qc.lic_snappy-denim-frise
+  QC.Sec:
+    repos:
+      github.com/interTwin-eu/dcnios bandit:
+        commands:
+        - /usr/bin/env sh .sqa/script.grumpy-ivory-hummingbird.sh
+        container: qc.sec_lovely-chartreuse-monkey
+  QC.Sty:
+    repos:
+      github.com/interTwin-eu/dcnios flake8:
+        commands:
+        - /usr/bin/env sh .sqa/script.dorky-zucchini-barb.sh
+        container: qc.sty_paltry-celadon-chinchilla
+      github.com/interTwin-eu/dcnios hadolint:
+        commands:
+        - /usr/bin/env sh .sqa/script.cloudy-amber-quoll.sh
+        container: qc.sty_wimpy-denim-hedgehog
+      github.com/interTwin-eu/dcnios jsonlint:
+        commands:
+        - /usr/bin/env sh .sqa/script.cheeky-tangerine-capybara.sh
+        container: qc.sty_slaphappy-azure-zonkey
+  QC.Uni:
+    repos:
+      github.com/interTwin-eu/dcnios pytest:
+        commands:
+        - /usr/bin/env sh .sqa/script.flaky-ivory-dog.sh
+        container: qc.uni_silly-zucchini-hamster
+  QC.Ver:
+    repos:
+      github.com/interTwin-eu/dcnios get_git_tags.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.pokey-salmon-panda.sh
+        container: qc.ver_nippy-seashell-lionfish
+timeout: 5400
