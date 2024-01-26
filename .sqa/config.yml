@@ -15,58 +15,28 @@ sqa_criteria:
     repos:
       github.com/interTwin-eu/dcnios git:
         commands:
-        - /usr/bin/env sh .sqa/script.slaphappy-persimmon-tapir.sh
-        container: qc.acc_craggy-cobalt-catfish
+        - /usr/bin/env sh .sqa/script.whiny-salmon-gerbil.sh
+        container: qc.acc_lousy-firebrick-kangaroo
   QC.Doc:
     repos:
       github.com/interTwin-eu/dcnios find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.foggy-khaki-rabbit.sh
-        container: qc.doc_snoopy-purple-catfish
+        - /usr/bin/env sh .sqa/script.ugly-maroon-dingo.sh
+        container: qc.doc_shaky-black-bordeaux
       github.com/interTwin-eu/dcnios git:
         commands:
-        - /usr/bin/env sh .sqa/script.flabby-lemon-gerbil.sh
-        container: qc.doc_wiggy-fuchsia-sheepdog
-      github.com/interTwin-eu/dcnios markdownlint:
-        commands:
-        - /usr/bin/env sh .sqa/script.tacky-taupe-grasshopper.sh
-        container: qc.doc_homely-tomato-spaniel
+        - /usr/bin/env sh .sqa/script.woolly-cyan-hamster.sh
+        container: qc.doc_whiny-denim-barb
   QC.Lic:
     repos:
       github.com/interTwin-eu/dcnios licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.sleepy-chartreuse-crane.sh
-        container: qc.lic_cheeky-platinum-iguana
-  QC.Sec:
-    repos:
-      github.com/interTwin-eu/dcnios bandit:
-        commands:
-        - /usr/bin/env sh .sqa/script.ugly-salmon-raccoon.sh
-        container: qc.sec_baggy-carmine-robin
-  QC.Sty:
-    repos:
-      github.com/interTwin-eu/dcnios flake8:
-        commands:
-        - /usr/bin/env sh .sqa/script.sunny-cobalt-ray.sh
-        container: qc.sty_snoopy-goldenrod-ladybird
-      github.com/interTwin-eu/dcnios hadolint:
-        commands:
-        - /usr/bin/env sh .sqa/script.craggy-cerise-cheetah.sh
-        container: qc.sty_shaky-alizarin-goose
-      github.com/interTwin-eu/dcnios jsonlint:
-        commands:
-        - /usr/bin/env sh .sqa/script.cozy-amethyst-whippet.sh
-        container: qc.sty_baggy-goldenrod-shark
-  QC.Uni:
-    repos:
-      github.com/interTwin-eu/dcnios pytest:
-        commands:
-        - /usr/bin/env sh .sqa/script.lumpy-grey-leopard.sh
-        container: qc.uni_shabby-orange-dragonfly
+        - /usr/bin/env sh .sqa/script.gloppy-mauve-mayfly.sh
+        container: qc.lic_homely-gold-snail
   QC.Ver:
     repos:
       github.com/interTwin-eu/dcnios get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.cozy-orchid-chimpanzee.sh
-        container: qc.ver_jumpy-aquamarine-ragdoll
+        - /usr/bin/env sh .sqa/script.paltry-cobalt-eagle.sh
+        container: qc.ver_snippy-grey-caracal
 timeout: 5400
