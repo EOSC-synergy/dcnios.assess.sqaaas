@@ -5,7 +5,7 @@ config:
       branch: release/2.0.0
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/interTwin-eu/dcnios:
-      branch: main
+      branch: dev-slangarita
       repo: https://github.com/interTwin-eu/dcnios
 environment:
   JPL_DOCKERFORCEBUILD: enabled
@@ -15,28 +15,28 @@ sqa_criteria:
     repos:
       github.com/interTwin-eu/dcnios git:
         commands:
-        - /usr/bin/env sh .sqa/script.whiny-salmon-gerbil.sh
-        container: qc.acc_lousy-firebrick-kangaroo
+        - /usr/bin/env sh .sqa/script.gloppy-periwinkle-gar.sh
+        container: qc.acc_sleazy-buff-wolf
   QC.Doc:
     repos:
       github.com/interTwin-eu/dcnios find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.ugly-maroon-dingo.sh
-        container: qc.doc_shaky-black-bordeaux
+        - /usr/bin/env sh .sqa/script.cozy-amber-mule.sh
+        container: qc.doc_sickly-wisteria-seal
       github.com/interTwin-eu/dcnios git:
         commands:
-        - /usr/bin/env sh .sqa/script.woolly-cyan-hamster.sh
-        container: qc.doc_whiny-denim-barb
+        - /usr/bin/env sh .sqa/script.fuzzy-goldenrod-spider.sh
+        container: qc.doc_greasy-chocolate-gopher
   QC.Lic:
     repos:
       github.com/interTwin-eu/dcnios licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.gloppy-mauve-mayfly.sh
-        container: qc.lic_homely-gold-snail
+        - /usr/bin/env sh .sqa/script.ready-saffron-eleuth.sh
+        container: qc.lic_baggy-bistre-quetzal
   QC.Ver:
     repos:
       github.com/interTwin-eu/dcnios get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.paltry-cobalt-eagle.sh
-        container: qc.ver_snippy-grey-caracal
+        - /usr/bin/env sh .sqa/script.gimpy-crimson-dingo.sh
+        container: qc.ver_goopy-scarlet-woodpecker
 timeout: 5400
