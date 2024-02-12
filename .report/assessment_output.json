@@ -1172,23 +1172,23 @@
             },
             "data": {
                 "entityType": "Assertion",
-                "entityId": "FQHT9E8yQoG48i08ZJxVIA",
-                "openBadgeId": "https://api.eu.badgr.io/public/assertions/FQHT9E8yQoG48i08ZJxVIA",
-                "createdAt": "2024-02-12T11:30:38.284083781Z",
+                "entityId": "RQdmEceHRXiCSRFSpImcBw",
+                "openBadgeId": "https://api.eu.badgr.io/public/assertions/RQdmEceHRXiCSRFSpImcBw",
+                "createdAt": "2024-02-12T11:32:03.629227530Z",
                 "createdBy": "aS1lWKgIR4u8bGjPZUzAyg",
                 "badgeclass": "UOmgyH_TSpSPXiro4aNBoQ",
                 "badgeclassOpenBadgeId": "https://api.eu.badgr.io/public/badges/UOmgyH_TSpSPXiro4aNBoQ",
                 "issuer": "aS1lWKgIR4u8bGjPZUzAyg",
                 "issuerOpenBadgeId": "https://api.eu.badgr.io/public/issuers/aS1lWKgIR4u8bGjPZUzAyg",
-                "image": "https://api.eu.badgr.io/public/assertions/FQHT9E8yQoG48i08ZJxVIA/image",
+                "image": "https://api.eu.badgr.io/public/assertions/RQdmEceHRXiCSRFSpImcBw/image",
                 "recipient": {
-                    "identity": "sha256$572b5767941868a138b2fcc28f829ddf422c1a03ba1a537a788c8ec44850c3f2",
+                    "identity": "sha256$5ec1571c0bd29f9de0c4454f1635c55c6164a4316468286172fda35d04b0f9ab",
                     "hashed": true,
                     "type": "url",
-                    "salt": "Jqv8PgT5CYYxrCnD",
+                    "salt": "XzAge0jz34RBUNEW",
                     "plaintextIdentity": "https://github.com/interTwin-eu/dcnios"
                 },
-                "issuedOn": "2024-02-12T11:30:38.284084285Z",
+                "issuedOn": "2024-02-12T11:32:03.629228309Z",
                 "narrative": "SQAaaS assessment results for repository https://github.com/interTwin-eu/dcnios (commit: f21382c4e75d9b6791b4d42c7717f4b146a1f4a6, branch/tag: dev-slangarita)",
                 "evidence": [
                     {
@@ -1206,7 +1206,7 @@
                 "expires": null,
                 "extensions": {},
                 "assertionRef": {
-                    "assertionUrl": "https://api.eu.badgr.io/public/assertions/FQHT9E8yQoG48i08ZJxVIA"
+                    "assertionUrl": "https://api.eu.badgr.io/public/assertions/RQdmEceHRXiCSRFSpImcBw"
                 },
                 "badgeRef": {
                     "badgeUrl": "https://api.eu.badgr.io/public/badges/UOmgyH_TSpSPXiro4aNBoQ"
@@ -1218,10 +1218,10 @@
                 "source": "local",
                 "sourceUrl": null,
                 "originalJson": null,
-                "imagePath": "uploads/badges/assertion-FQHT9E8yQoG48i08ZJxVIA.png"
+                "imagePath": "uploads/badges/assertion-RQdmEceHRXiCSRFSpImcBw.png"
             },
-            "share": "<!--\nSPDX-FileCopyrightText: Copyright contributors to the Software Quality Assurance as a Service (SQAaaS) project <sqaaas@ibergrid.eu>\nSPDX-FileContributor: Pablo Orviz <orviz@ifca.unican.es>\n\nSPDX-License-Identifier: GPL-3.0-only\n-->\n\n<blockquote class=\"badgr-badge\" style=\"font-family: Helvetica, Roboto, &quot;Segoe UI&quot;, Calibri, sans-serif;\"><a href=\"https://api.eu.badgr.io/public/assertions/FQHT9E8yQoG48i08ZJxVIA?identity__url=https%3A//github.com/EOSC-synergy/dcnios.assess.sqaaas/commit/3409bbff2ddc66b048a1b1ed90e3da283a89a47e\"><img width=\"120px\" height=\"120px\" src=\"https://api.eu.badgr.io/public/assertions/FQHT9E8yQoG48i08ZJxVIA/image\"></a><script async=\"async\" src=\"https://eu.badgr.com/assets/widgets.bundle.js\"></script></blockquote>",
-            "verification_url": "https://badgecheck.io/?url=https%3A%2F%2Fapi.eu.badgr.io%2Fpublic%2Fassertions%2FFQHT9E8yQoG48i08ZJxVIA?identity__url=https%3A%2F%2Fgithub.com%2FEOSC-synergy%2Fdcnios.assess.sqaaas%2Fcommit%2F3409bbff2ddc66b048a1b1ed90e3da283a89a47e&amp;identity__url=https%3A%2F%2Fgithub.com%2FEOSC-synergy%2Fdcnios.assess.sqaaas%2Fcommit%2F3409bbff2ddc66b048a1b1ed90e3da283a89a47e"
+            "share": "<!--\nSPDX-FileCopyrightText: Copyright contributors to the Software Quality Assurance as a Service (SQAaaS) project <sqaaas@ibergrid.eu>\nSPDX-FileContributor: Pablo Orviz <orviz@ifca.unican.es>\n\nSPDX-License-Identifier: GPL-3.0-only\n-->\n\n<blockquote class=\"badgr-badge\" style=\"font-family: Helvetica, Roboto, &quot;Segoe UI&quot;, Calibri, sans-serif;\"><a href=\"https://api.eu.badgr.io/public/assertions/RQdmEceHRXiCSRFSpImcBw?identity__url=https%3A//github.com/EOSC-synergy/dcnios.assess.sqaaas/commit/3409bbff2ddc66b048a1b1ed90e3da283a89a47e\"><img width=\"120px\" height=\"120px\" src=\"https://api.eu.badgr.io/public/assertions/RQdmEceHRXiCSRFSpImcBw/image\"></a><script async=\"async\" src=\"https://eu.badgr.com/assets/widgets.bundle.js\"></script></blockquote>",
+            "verification_url": "https://badgecheck.io/?url=https%3A%2F%2Fapi.eu.badgr.io%2Fpublic%2Fassertions%2FRQdmEceHRXiCSRFSpImcBw?identity__url=https%3A%2F%2Fgithub.com%2FEOSC-synergy%2Fdcnios.assess.sqaaas%2Fcommit%2F3409bbff2ddc66b048a1b1ed90e3da283a89a47e&amp;identity__url=https%3A%2F%2Fgithub.com%2FEOSC-synergy%2Fdcnios.assess.sqaaas%2Fcommit%2F3409bbff2ddc66b048a1b1ed90e3da283a89a47e"
         }
     }
 }
