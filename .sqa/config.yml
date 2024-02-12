@@ -15,28 +15,28 @@ sqa_criteria:
     repos:
       github.com/interTwin-eu/dcnios git:
         commands:
-        - /usr/bin/env sh .sqa/script.droopy-periwinkle-squirrel.sh
-        container: qc.acc_snazzy-copper-bullfrog
+        - /usr/bin/env sh .sqa/script.cozy-sepia-rattlesnake.sh
+        container: qc.acc_pretty-wisteria-warthog
   QC.Doc:
     repos:
       github.com/interTwin-eu/dcnios find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.homely-firebrick-hedgehog.sh
-        container: qc.doc_crabby-mauve-seal
+        - /usr/bin/env sh .sqa/script.hazy-flax-coati.sh
+        container: qc.doc_lumpy-tan-spitz
       github.com/interTwin-eu/dcnios git:
         commands:
-        - /usr/bin/env sh .sqa/script.stealthy-xanthic-walrus.sh
-        container: qc.doc_silly-copper-gopher
+        - /usr/bin/env sh .sqa/script.nippy-auburn-sponge.sh
+        container: qc.doc_pasty-malachite-chimpanzee
   QC.Lic:
     repos:
       github.com/interTwin-eu/dcnios licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.frumpy-magenta-capybara.sh
-        container: qc.lic_wheezy-coral-turtle
+        - /usr/bin/env sh .sqa/script.tacky-myrtle-binturong.sh
+        container: qc.lic_crappy-wisteria-boar
   QC.Ver:
     repos:
       github.com/interTwin-eu/dcnios get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.freaky-cerulean-setter.sh
-        container: qc.ver_nippy-puce-sparrow
+        - /usr/bin/env sh .sqa/script.sunny-violet-slug.sh
+        container: qc.ver_homey-aquamarine-bee
 timeout: 5400
