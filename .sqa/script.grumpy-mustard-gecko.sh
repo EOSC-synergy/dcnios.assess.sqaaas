@@ -5,5 +5,5 @@
 
 (
 cd github.com/interTwin-eu/dcnios &&
-    git rev-parse --is-inside-work-tree
+    pytest  --json-report  --json-report-indent 4
 )

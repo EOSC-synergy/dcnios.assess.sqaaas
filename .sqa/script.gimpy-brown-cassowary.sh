@@ -5,5 +5,5 @@
 
 (
 cd github.com/interTwin-eu/dcnios &&
-    licensee detect . --confidence 60 --json
+    mdl --json  .
 )

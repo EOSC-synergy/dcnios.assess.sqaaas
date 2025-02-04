@@ -2,7 +2,7 @@ config:
   credentials: []
   project_repos:
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: release/2.0.0
+      branch: main
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/interTwin-eu/dcnios:
       branch: main
@@ -15,28 +15,64 @@ sqa_criteria:
     repos:
       github.com/interTwin-eu/dcnios git:
         commands:
-        - /usr/bin/env sh .sqa/script.skinny-chartreuse-chow.sh
-        container: qc.acc_baggy-turquoise-wombat
+        - /usr/bin/env sh .sqa/script.boozy-denim-balinese.sh
+        container: qc.acc_smelly-magnolia-hare
   QC.Doc:
     repos:
       github.com/interTwin-eu/dcnios find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.trippy-ivory-squirrel.sh
-        container: qc.doc_skanky-puce-malamute
+        - /usr/bin/env sh .sqa/script.flaky-fuchsia-opossum.sh
+        container: qc.doc_skanky-tan-kingfisher
       github.com/interTwin-eu/dcnios git:
         commands:
-        - /usr/bin/env sh .sqa/script.zippy-dandelion-binturong.sh
-        container: qc.doc_craggy-sepia-moose
+        - /usr/bin/env sh .sqa/script.muggy-tan-mouse.sh
+        container: qc.doc_nippy-asparagus-nightingale
+      github.com/interTwin-eu/dcnios markdownlint:
+        commands:
+        - /usr/bin/env sh .sqa/script.gimpy-brown-cassowary.sh
+        container: qc.doc_gimpy-champagne-bulldog
   QC.Lic:
     repos:
       github.com/interTwin-eu/dcnios licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.cloudy-auburn-budgerigar.sh
-        container: qc.lic_blurry-wisteria-barb
+        - /usr/bin/env sh .sqa/script.fuzzy-brown-rottweiler.sh
+        container: qc.lic_chummy-cerulean-argentino
+  QC.Met:
+    repos:
+      github.com/interTwin-eu/dcnios validate_codemeta:
+        commands:
+        - /usr/bin/env sh .sqa/script.hasty-cornflower-llama.sh
+        container: qc.met_hazy-bistre-wallaby
+  QC.Sec:
+    repos:
+      github.com/interTwin-eu/dcnios bandit:
+        commands:
+        - /usr/bin/env sh .sqa/script.slimy-smalt-lionfish.sh
+        container: qc.sec_grumpy-tomato-octopus
+  QC.Sty:
+    repos:
+      github.com/interTwin-eu/dcnios flake8:
+        commands:
+        - /usr/bin/env sh .sqa/script.skanky-carmine-tzu.sh
+        container: qc.sty_greasy-cyan-fowl
+      github.com/interTwin-eu/dcnios hadolint:
+        commands:
+        - /usr/bin/env sh .sqa/script.lovely-bistre-stingray.sh
+        container: qc.sty_scaly-maroon-fox
+      github.com/interTwin-eu/dcnios jsonlint:
+        commands:
+        - /usr/bin/env sh .sqa/script.snoopy-ochre-insect.sh
+        container: qc.sty_geeky-flax-ocelot
+  QC.Uni:
+    repos:
+      github.com/interTwin-eu/dcnios pytest:
+        commands:
+        - /usr/bin/env sh .sqa/script.grumpy-mustard-gecko.sh
+        container: qc.uni_scummy-seashell-bird
   QC.Ver:
     repos:
       github.com/interTwin-eu/dcnios get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.scanty-burgundy-cichlid.sh
-        container: qc.ver_hilly-asparagus-russel
+        - /usr/bin/env sh .sqa/script.clammy-saffron-setter.sh
+        container: qc.ver_whiny-razzmatazz-sheepdog
 timeout: 5400

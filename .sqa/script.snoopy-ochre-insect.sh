@@ -5,5 +5,5 @@
 
 (
 cd github.com/interTwin-eu/dcnios &&
-    git rev-parse --is-inside-work-tree
+    jsonlint-cli "**/*.json"
 )
